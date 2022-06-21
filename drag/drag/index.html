@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #mydiv {
+        position: absolute;
+        z-index: 9;
+
+
+        text-align: center;
+        border-radius: 50%;
+
+        border: 2px solid deepskyblue;
+    }
+
+    #mydivheader {
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+
+    #mydiv2 {
+
+        position: absolute;
+        z-index: 9;
+
+
+        text-align: center;
+        border-radius: 50%;
+
+        border: 2px solid deepskyblue;
+
+    }
+
+    #mydivheader2 {
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .resizeable {
+
+
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        align-items: center;
+        resize: auto;
+        color: deepskyblue;
+    }
+</style>
+
+<body>
+
+    <div id="mydiv" class="resizeable">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader">C</div>
+        <!-- <p>heello</p> -->
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <div id="mydiv2">
+        <div id="mydivheader2">R</div>
+    </div>
+
+
+
+    <!-- <div class="header mydiv">
+        <div id="mydivheader">Click here to move</div>
+    </div> -->
+</body>
+
+<script src="index.js"> </script>
+
+</html>
