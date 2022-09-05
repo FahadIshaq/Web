@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practic HTML</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        #header-title {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #inputbutton {
+            display: flex;
+            border-color: brown;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">
+                My Items List
+            </h1>
+        </div>
+        <div class="col-md-6 align-self-center d-flex align-items-center justify-content-center" id="inputbutton">
+            <input type="text" class="form-control" id="filter" placeholder="search items">
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+
+            <h2 class="title">
+                Add Items
+            </h2>
+
+            <form class="form-inline mb3" id="addForm">
+                <h4 class="mr-2">
+                    Item Name:
+                </h4>
+                <input type="text" class="form-control mr-2" id="elementt">
+                <h4 class=" ml-2 mr-2">Quantity: </h4>
+                <select class="form-control mr-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <input type="submit" class="btn btn-dark" value="Submit">
+
+            </form>
+            <h3 class="title" id="items">
+                Items
+            </h3>
+            <!-- <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button> </li>
+                <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+            </ul> -->
+            <div id="output"></div>
+            <br>
+            <button onclick="buttonclick(1)" class="btn btn-dark btn-block" id="button">Show All</button>
+            <br>
+            <br>
+
+
+
+        </div>
+        <script src="dom.js"></script>
+</body>
+
+</html>
